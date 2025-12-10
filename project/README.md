@@ -1,0 +1,6 @@
+# Machine Learning Techniques for Air Travel Disruption Detection
+**Final Course Project Files**
+
+This folder contains my final course project files. The main file of note is [FreshMonthlyApproach5105_project_orb.ipynb](FreshMonthlyApproach5105_project_orb.ipynb) which contains the arrival delay regression, carrier delay regression and late aircraft delay regression. It was difficult to get a reliable high-accuracy fit for the diversion classifier as diversions were too infrequent an event for any reliable correlation to be determined, however attempts at this classifier as well as initial experiments with the regression models are located in the notebook [ecgr5105_project_orb_discarded.ipynb](ecgr5105_project_orb_discarded.ipynb).
+
+The [FreshMonthlyApproach5105_project_orb.ipynb](FreshMonthlyApproach5105_project_orb.ipynb) notebook also includes an interpreter which loads the obtained model weights from files and demonstrates the three regressions models using flight data in the dataset. The weights used in testing of the interpreter are located in the project folder as well. The interpreter uses the StandardScaler based on the training-validation split from the standardization in the notebook. This split comes from `train_test_split()` from `sklearn` seeded with the value 42.
